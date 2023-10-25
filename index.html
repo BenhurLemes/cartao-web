@@ -7,7 +7,9 @@
     <title>Cartão de Crédito</title>
 </head>
 <body>
-    <div class="preloader"></div>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
     <main class="container">
         <section class="ui">
             <div class="container-left">
@@ -25,12 +27,12 @@
                     <div class="infos-container">
                         <div class="expiration-container">
                             <label>validade</label>
-                            <input type="number" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="00/00" required
+                            <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="00/00" required
                             onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
                         <div class="cvc-container">
                             <label>cvc</label>
-                            <input type="number" name="cvc-text" id="cvc-text" maxlength="3" required
+                            <input type="text" name="cvc-text" id="cvc-text" maxlength="3" placeholder="123" required
                             onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
                     </div>
@@ -40,26 +42,48 @@
             <div class="container-right">
                 <div class="card">
                     <div class="black-side"></div>
-                    <div class="intern">
-                        <img src="/img/aprox.png" alt="approximation" class="approximation">
-                        <div class="card-number">
-                            <div class="number-v1">1234 5678 9101 1121</div>
-                        </div>
-                        <div class="card-holder">
-                            <label>Nome</label>
-                            <div class="name-v1">Lorem Ipsum</div>
-                        </div>
-                        <div class="card-infos">
-                            <div class="exp">
-                                <label>validade</label>
-                                <div class="expiration-v1">00/00</div>
+                    <div class="card-column">
+                        <div class="intern-1">
+                            <div class="paragrafo-column">
+                                <div class="card-help">
+                                    <p>Precisa de ajuda?</p>
+                                    <p class="card-notice">Entre no nosso app.</p>
+                                </div>
+                                <div class="card-in-contry">
+                                    <p>Brasil</p>
+                                    <p class="number-in-contry">1111 111 1111</p>
+                                </div>
+                                <div class="card-out-contry">
                             </div>
-                            <div class="cvc">
-                                <label>cvc</label>
-                                <div class="cvc-v1">123</div>
+                                <p>fora do Brasil</p>
+                                <p class="number-out-contry">1 111 111 1111</p>
+                            </div>
+                            <img src="/img/aprox.png" alt="approximation" class="approximation">
+                        </div>
+                        <div class="intern-2">
+                            <div class="paragrafo-column">
+                                <div class="card-holder">
+                                    <label class="label-name">Nome</label>
+                                    <div class="name-v1">Lorem Ipsum</div>
+                                    <p>platinum</p>
+                                </div>
+                                <div class="card-number">
+                                    <div class="number-v1">1234 5678 9023 4567</div>
+                                </div>
+                                <div class="card-infos">
+                                    <div class="exp">
+                                        <label class="label-mini">validade</label>
+                                        <div class="expiration-v1">01/11</div>
+                                    </div>
+                                    <div class="cvc">
+                                        <label class="label-mini">cvc</label>
+                                        <div class="cvc-v1">123</div>
+                                    </div>
+                                </div>
+                                <img src="/img/chip.png" alt="chip" class="chip">
+                                <div class="cwb">THALES XXX I1111111A1 1111</div>
                             </div>
                         </div>
-                        <img src="/img/chip.png" alt="chip" class="chip">
                     </div>
                 </div>
             </div>
