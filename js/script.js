@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
         document.querySelector('.preloader').style.display='none';
     },1000);
 });
-// Fim do Loader
+// Fim Loader
 
 // Cartão
 
@@ -23,12 +23,12 @@ const cardCVCText = document.querySelector(".cvc-v1");
 
 cardNumber.addEventListener("keyup", (e) => {
     if(!e.target.value) {
-        cardNumberText.innerText = "1234 5678 9023 4567";
+        cardNumberText.innerText = "1234 5678 9101 1121";
     } else {
         const valuesOfInput = e.target.value.replaceAll(" ","");
         if (e.target.value.length > 14) {
             e.target.value = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, "$1 $2 $3 $4");
-            cardNumberText.innerHTML = valuesOfInput.valuesOfInput.replace(/(\d{4})(\d{4})(\d{0,4})/, "$1 $2 $3 $4");
+            cardNumberText.innerHTML = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, "$1 $2 $3 $4");
         } else if (e.target.value.length > 9) {
             e.target.value = valuesOfInput.valuesOfInput.replace(/(\d{4})(\d{4})(\d{0,4})/, "$1 $2 $3");
             cardNumberText.innerHTML = valuesOfInput.replace(/(\d{4})(\d{4})(\d{0,4})/, "$1 $2 $3");
@@ -45,7 +45,7 @@ cardHolder.addEventListener("keyup", (e) => {
     if (!e.target.value) {
         cardHolderText.innerHTML = "Lorem Ipsum";
     } else {
-        cardCVCText.innerHTML = e.target.value.toUpperCase();
+        cardHolderText.innerHTML = e.target.value.toUpperCase();
     }
 });
 
@@ -76,4 +76,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     alert("Credit Card Added!");
-})
+});
+
+// Fim Cartão
