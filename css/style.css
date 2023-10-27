@@ -9,7 +9,6 @@
     font-family: 'Gellix';
     src: local(Gellix), url(../fonts/Gellix.ttf);
 }
-
 /* Fim Geral */
 
 
@@ -95,6 +94,7 @@ body{
 }
 
 .container-left{
+    margin-top: 6rem;
     width: 50%;
 }
 
@@ -151,34 +151,50 @@ body{
 }
 /* Fim Cartão */
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Front */
-/* Fim Front */
-
 /* front-1 */
-
 img[alt=mastercard_logo]{
     width: 30%;
 }
 
-/* fim front-1 */
+img[alt=chip_front]{
+    width: 40%;
+    transform: rotate(90deg);
+}
+
+.front-1{
+    height: 70%;
+}
+
+.card-images{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+/* Fim front-1 */
 
 /* front-2 */
-/* fim front-2 */
+.front-2{
+    height: 30%;
+}
 
-/* Back */
+.front-2 .card-holder{
+    margin-left: 2rem;
+}
+
+.front-2 img{
+    width: 35%;
+}
+/* Fim front-2 */
+
+/* black-side */
 .black-side{
     height: 100%;
     width: 50px;
     background-color: rgb(0, 0, 0);
     border-radius: 3px;
 }
-/* Fim Back */
+/* Fim black-side */
 
 /* back-1 */
 .back-1{
@@ -256,9 +272,9 @@ img[alt=mastercard_logo]{
 
 .cwb{
     margin-top: 2px;
-    font-size: .6rem;
+    font-size: .7rem;
 }
-/* Fim Intern 2 */
+/* Fim back-2 */
 
 /* Input a esquerda */
 #credit-card {
@@ -308,7 +324,6 @@ input[type="submit"] {
 .infos-container {
     display: flex;
 }
-
 /* Fim Input a esquerda */
 
 
