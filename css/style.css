@@ -69,22 +69,27 @@
 }
 /* Fim Loading */
 
-/* Container */
-body{
+/* Body */
+
+body, html{
     height: 100%;
-    background-color: #2222;
 }
 
+/* Fim Body */
+
+/* Container */
+
 .container{
-    width: 100%;
-    height: 100%;
-    margin: 3% auto;
+    background-image: url('/img/fundo.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .ui{
     border: 0;
-    box-shadow: 0 0 10px 0 rgba(149, 184, 209, 0.5);
-    border-radius: 15px;
+    /* box-shadow: 0 0 10px 0 rgba(149, 184, 209, 0.5); */
+    box-shadow: 0 0 10px 0 rgba(153, 0, 255, 0.5);
     width: 60%;
     margin: 0 auto;
     padding: 10%;
@@ -316,9 +321,15 @@ input#valid-thru-text, input#cvc-text{
 }
 
 input[type="submit"] {
-    width: 95%;
-    background-color: #008cb1;
+    width: 94%;
+    background-color: #60089b;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+    color: #000;
+    background-color: #fff;
 }
 
 .infos-container {

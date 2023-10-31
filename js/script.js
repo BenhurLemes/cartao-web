@@ -43,7 +43,7 @@ cardNumber.addEventListener("keyup", (e) => {
 
 cardHolder.addEventListener("keyup", (e) => {
     if (!e.target.value) {
-        cardHolderText.innerHTML = "Lorem Ipsum";
+        cardHolderText.innerHTML = "LOREM IPSUM";
     } else {
         cardHolderText.innerHTML = e.target.value.toUpperCase();
     }
@@ -75,7 +75,7 @@ cardCVC.addEventListener("keyup", (e) => {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    alert("Credit Card Added!");
+    alert("Cartão de Crédito adicionado!");
 });
 
 // Fim Cartão
